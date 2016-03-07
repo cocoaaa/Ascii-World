@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ascii</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/base.css">
+
+
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>ShowMeAscii</title>
+    <meta name="description" content="Ascii art submission website">
+    <meta name="author" content="Hayley Song">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+
+    <link rel="stylesheet" href="../static/fonts/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+    <!--    <link href="fonts/css/font-awesome.css"-->
+
+    <!--Scripts
+--------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+-->
+
+<body>
+    <div class="container">
+
+        <div class="header center">
+            <h1>Welcome to Ascii Art!</h1>
+        </div>
+
+        <div class="row container-form">
+            <div class="eight columns">
+                <form method="post" class="u-max-full-width">
+                    <label >
+                        <div>Title:</div>
+                        <input type="text" name="title" value="{{title}}" /><span class="error">{{error_title}}</span>
+                    </label>
+                    <br>
+                    <label>
+                        <div>Art:</div>
+                        <textarea name="art">{{art}}</textarea><span class="error">{{error_art}}</span>
+                    </label>
+                    <br>
+                    <input type=submit value="Post"/>
+                </form>
+            </div>
+
+            <div class="four columns">
+                {% block map %} 
+                {% endblock map%}
+            </div>
+        </div>
+
+        <hr>
+        <hr> 
+        {% block content %} 
+        {% endblock content %}
+    </div>
+</body>
+
+</html>

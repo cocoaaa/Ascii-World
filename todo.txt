@@ -1,0 +1,6 @@
+Todo for ASCII art
+1. make MAP api interactive
+    - zoom in and out
+    - click on the pin for location info
+    
+2. Use magnify to bring up the ascii arts on the front page

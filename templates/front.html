@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block map %}
+    {% if mapURL %}
+        <div class="container-map">
+            <img src="{{mapURL}}"/>
+        </div>
+    {% endif %}
+{% endblock map %}
+<hr>
+
+{% block content %}
+    {% if arts %}
+        <div class="row container-arts center">
+        {% for a in arts %}
+            <div>
+                <div class="art-title">{{a.title}}</div>
+                <pre class="art-body">{{a.art}}</pre>
+                <div class="art-date">{{a.created}}</div>
+            </div> 
+            <hr>
+        {% endfor %}
+        </div>
+    {% endif %}
+{% endblock content %}
+

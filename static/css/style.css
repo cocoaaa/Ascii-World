@@ -1,0 +1,117 @@
+/* Table of Contents
+
+-------------------------------------------------------------------
+-General Content
+-Typography
+-Header & Navigation
+-Images & Media
+-Footer
+-Media Queries
+-------------------------------------------------------------------*/
+
+/* General Content 
+-------------------------------------------------------------------*/
+.main{padding-top:3%;} 
+.row{padding: 2% 0;}
+.green{background-color: greenyellow;}
+.darkGreen{color:#007A78;}
+.white{color:#FFF};
+.black{color:#000;}
+.description{
+    font-size: 2em;
+    background-color: darkslategray;
+}
+
+/* Typography
+-------------------------------------------------------------------*/
+body{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+    color: #000;
+}
+
+h2{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 3em;
+    margin: 0.0667;
+}
+h2.bio{
+    color:cornflowerblue;
+}
+p.bio{
+    color:aliceblue;
+}
+
+.description > h2{font-size: 3em;}
+.description > p{font-size: 0.7em;}
+/* Header & Navigation 
+-------------------------------------------------------------------*/
+header.main_nav{
+    padding: 1% 0;
+    display: block;
+}
+
+div.main{
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+.logo{
+    margin: 5% auto;
+    text-align: center;
+}
+
+.logo a{
+    font-size: 3em;
+    color: white;
+    text-decoration:  none;
+    border: 3px solid white;
+    text-transform: uppercase;
+    padding: 2px 10px 0px 10px;
+    margin: 0;
+}
+.logo a:hover{
+    background-color: white;
+    color:greenyellow;
+}
+/* Images & Media
+-------------------------------------------------------------------*/
+img{max-width: 100%;}
+img.avatar{
+    border-radius:50%;
+    border: 5px solid white;
+}
+img:hover{opacity:0.8;}
+/* Footer 
+-------------------------------------------------------------------*/
+ul.social{
+    display: block;
+    text-align: center;
+    margin: 5% 0;
+    list-style-type: none;
+}
+
+ul li{
+    display: inline;
+    font-size: 3em;
+    padding: 0 2%;
+}
+
+ul li a{
+    color:#666;
+}
+
+ul li.facebook a:hover{
+    color:cornflowerblue;
+}
+
+ul li.twitter a:hover{
+    color:aquamarine;
+}
+
+p.copyright{
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+/* Media Queries 
+-------------------------------------------------------------------*/

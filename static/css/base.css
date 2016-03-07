@@ -1,0 +1,62 @@
+<style type="text/css">
+
+    body {
+        font-family: sans-serif; width: 800px; margin: 0 auto; padding: 10px;
+        
+    }
+
+    .error {
+        color: red;
+    }
+    label {
+        display: block; font-size: 20px;
+    }
+
+/*
+form{
+    border: solid 3em;
+}
+*/
+    input[type=text] {
+        font-size: 20px; padding: 2px;
+/*        border: solid #aaa;*/
+        
+    }
+    textarea {
+        width: 30em;
+        height: 15em;
+        font-size: 17px; 
+        font-family: monospace;
+/*        border: solid #aaa;*/
+    }
+/*
+    input[type=submit] {
+        font-size: 1.3em;
+    }
+*/
+    hr {
+        margin: 20px auto;
+    }
+
+    .art + .art {
+        margin-top: 20px;
+    }
+    .art-title {
+        font-weight: bold; font-size: 20px;
+    }
+    .art-body {
+        margin: 0; font-size: 17px;
+    }
+
+/*
+form.border{
+    display: inline-block;
+}
+*/
+.header{
+    margin-top:5%;
+    margin-bottom:5%;
+    text-align: center;
+    }
+
+</style>
